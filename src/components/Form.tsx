@@ -14,15 +14,15 @@ const Form: FC = () => {
         validations: {
             cardNumber: {
                 custom: {
-                    isValid: (value) => value.length >= 10,
+                    isValid: (value) => value.toString().length >= 10,
                     message:
                         "Card number has to be a minimum of 10 digits",
                 },
             },
             cvv: {
                 custom: {
-                    isValid: (value) => value.length === 3,
-                    message: 'CVV has to be a minimum of 3 numbers',
+                    isValid: (value) => value.toString().length >= 3 && value.toString().length <= 4,
+                    message: 'CVV has to be a minimum of 3 numbers and maximum of 4 numbers',
                 },
             },
             expiry: {
@@ -33,8 +33,7 @@ const Form: FC = () => {
             },
         },
         onSubmit: () => {
-            alert('submitted')
-            console.log(cardDetails);
+            console.log('card details submitted', cardDetails);
         },
     });
 
