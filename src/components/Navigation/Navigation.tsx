@@ -1,8 +1,9 @@
 import React, { FC } from 'react';
-import Title from './Title';
-import { Constants } from '../constants/default';
-import Hamburger from '../assets/hamburger.png';
-import Arrow from '../assets/left-arrow.png';
+import Title from '../Title';
+import { Constants } from '../../constants/default';
+import Hamburger from '../../assets/hamburger.png';
+import Arrow from '../../assets/left-arrow.png';
+import './navigation.scss';
 
 interface navigationProps {
     handleClick: (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => void;

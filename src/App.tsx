@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import './App.scss';
-import Navigation from './components/Navigation';
-import Menu from './components/Menu';
-import Form from './components/Form';
-import Message from './components/Message';
+import Navigation from './components/Navigation/Navigation';
+import Menu from './components/Menu/Menu';
+import Form from './components/Form/Form';
+import Message from './components/Message/Message';
 import { Constants } from './constants/default';
 
 

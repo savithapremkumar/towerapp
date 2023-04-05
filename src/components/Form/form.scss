@@ -1,0 +1,39 @@
+.form {
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    .row{
+      padding:10px;
+     }
+  
+     input[name="card"]{
+      max-width:300px;
+      width:300px;
+    }
+  
+    input[name="cvv"]{
+      max-width:60px;
+      margin-right:20px;
+    }
+    input[name="expiry"]{
+      margin-left:20px;
+      width:200px;
+    }
+    input[type="submit"]{
+      width:200px;
+      height:30px;
+      cursor:pointer;
+      background-color:white;
+      border-radius:3px;
+    }
+    
+    }
+    .error {
+      width: 100%;
+      text-align: left;
+      font-size: 12px;
+      color: #db222a;
+    }
+  
+  
+  

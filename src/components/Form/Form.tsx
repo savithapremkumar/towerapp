@@ -1,5 +1,6 @@
 import React, { FC } from 'react';
-import { useForm } from './hooks/useForm';
+import { useForm } from '../hooks/useForm';
+import './form.scss';
 
 
 export interface CardNumberDetails {
