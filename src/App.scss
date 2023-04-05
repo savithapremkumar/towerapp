@@ -1,38 +1,80 @@
 .App {
+  margin:5px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navigation {
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0 auto;
+  border-bottom : 1px solid black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.left{
+  text-align:left;
+  max-width:max-content;
+  cursor:pointer;
+  display:flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+  align-items: center;
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+  img{
+    display:flex;
+    justify-content: center;
   }
 }
+
+.center{
+  text-align:center;
+}
+
+.message{
+  margin:50px 0;
+}
+
+.menu{
+  display:flex;
+  justify-content: left;
+}
+
+.form {
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  .row{
+    padding:10px;
+   }
+
+   input[name="card"]{
+    max-width:300px;
+    width:300px;
+  }
+
+  input[name="cvv"]{
+    max-width:60px;
+    margin-right:20px;
+  }
+  input[name="expiry"]{
+    margin-left:20px;
+    width:200px;
+  }
+  input[type="submit"]{
+    width:200px;
+    height:30px;
+    cursor:pointer;
+    background-color:white;
+    border-radius:3px;
+  }
+  
+  }
+ 
+
+  .error {
+    width: 100%;
+    text-align: left;
+    font-size: 12px;
+    color: #db222a;
+  }
+
+
+
