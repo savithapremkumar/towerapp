@@ -39,7 +39,7 @@ const Form: FC = () => {
     });
 
     return (
-        <form className="form" onSubmit={handleSubmit}>
+        <form className="form" onSubmit={handleSubmit} name="registerForm">
             <div className="row">
                 <input
                     aria-label="Credit card number"
